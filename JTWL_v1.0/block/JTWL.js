@@ -4,7 +4,7 @@ goog.require('Blockly.Blocks');
  
 var JTWLColorIni  = '#FF66B6';  
 var JTWLColorLcd  = '#00ABCD';
-var JTWLColorSer  = '#FFCC66';
+var JTWLColorSer  = '#FFCC66'; 
 var JTWLColorAcc  = '#DB8CCD';
 var JTWLColorEnv  = '#A020F0';
 var JTWLColorLig  = '#A3CE47';
