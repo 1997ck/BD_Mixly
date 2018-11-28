@@ -149,8 +149,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_ACC1)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };  
@@ -161,8 +161,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_ACC2)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   }; 
@@ -173,8 +173,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_ACC3)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };  
@@ -186,8 +186,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_ACD1)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };  
@@ -198,8 +198,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_ACD2)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   }; 
@@ -210,8 +210,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_ACD3)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };   
@@ -223,8 +223,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_ANG1)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };  
@@ -235,8 +235,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_ANG2)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   }; 
@@ -247,8 +247,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_ANG3)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   }; 
@@ -260,8 +260,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_MAG1)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };  
@@ -272,8 +272,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_MAG2)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };  
@@ -284,8 +284,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_MAG3)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };  
@@ -297,8 +297,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_PRE)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };  
@@ -310,8 +310,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_COO1)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };  
@@ -322,8 +322,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_COO2)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };  
@@ -335,8 +335,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_POS1)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };  
@@ -347,8 +347,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_POS2)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };
@@ -359,8 +359,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_POS3)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };  
@@ -371,8 +371,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_POS4)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };
@@ -383,8 +383,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_POS5)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };
@@ -395,8 +395,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_POS6)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };
@@ -407,8 +407,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_POS7)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };  
@@ -434,8 +434,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_ENV1)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/huanjing.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };    
@@ -446,8 +446,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_ENV2)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/huanjing.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };      
@@ -458,8 +458,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_ENV3)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/huanjing.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };      
@@ -470,8 +470,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_ENV4)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/huanjing.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };      
@@ -497,8 +497,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_LIG1)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/guangzhao.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };    
@@ -509,8 +509,8 @@ var JTWLColor = '#00ABCD';
             .appendField(Blockly.JT_LIG2)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/guangzhao.png", 52, 32))
 			
-      this.setOutput(true, Boolean);
       this.setInputsInline(true);
+      this.setOutput(true, Number);
       this.setTooltip('');
     }
   };     
