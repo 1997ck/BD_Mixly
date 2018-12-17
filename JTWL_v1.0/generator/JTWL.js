@@ -46,60 +46,34 @@ goog.require('Blockly.JavaScript');
 	};
 	
 	<!--刷新姿态数据-->
-	Blockly.Arduino.JT_Acc = function() {
+	Blockly.Arduino.JT_ReAcc = function() {
 		var code = 'getIMUData();\n';
 		return code;
 	};	
+	
 	<!--加速度-->
-	Blockly.Arduino.JT_Acc1 = function() {
-		var code = 'AXV()';
+	Blockly.Arduino.JT_Acc = function() {
+		var JTWL_ACC = this.getFieldValue('JTWL_ACC');
+		var code = 'A'+JTWL_ACC+'V()';
 		return [code, Blockly.Arduino.ORDER_ATOMIC];
 	};
-	Blockly.Arduino.JT_Acc2 = function() {
-		var code = 'AYV()';
-		return [code, Blockly.Arduino.ORDER_ATOMIC];
-	};
-	Blockly.Arduino.JT_Acc3 = function() {
-		var code = 'AZV()';
-		return [code, Blockly.Arduino.ORDER_ATOMIC];
-	};
+	
 	<!--加速度方向-->
-	Blockly.Arduino.JT_AccDirection1 = function() {
-		var code = 'gateX()';
-		return [code, Blockly.Arduino.ORDER_ATOMIC];
-	};
-	Blockly.Arduino.JT_AccDirection2 = function() {
-		var code = 'gateY()';
-		return [code, Blockly.Arduino.ORDER_ATOMIC];
-	};
-	Blockly.Arduino.JT_AccDirection3 = function() {
-		var code = 'gateZ()';
+	Blockly.Arduino.JT_AccDirection = function() {
+		var JTWL_ACD = this.getFieldValue('JTWL_ACD');
+		var code = 'gate'+JTWL_ACD+'()';
 		return [code, Blockly.Arduino.ORDER_ATOMIC];
 	};
 	<!--角速度-->
-	Blockly.Arduino.JT_Angular1 = function() {
-		var code = 'GXV()';
-		return [code, Blockly.Arduino.ORDER_ATOMIC];
-	};
-	Blockly.Arduino.JT_Angular2 = function() {
-		var code = 'GYV()';
-		return [code, Blockly.Arduino.ORDER_ATOMIC];
-	};
-	Blockly.Arduino.JT_Angular3 = function() {
-		var code = 'GZV()';
+	Blockly.Arduino.JT_Angular = function() {
+		var JTWL_ANG = this.getFieldValue('JTWL_ANG');
+		var code = 'G'+JTWL_ANG+'V()';
 		return [code, Blockly.Arduino.ORDER_ATOMIC];
 	};
 	<!--磁场-->
-	Blockly.Arduino.JT_Magnetic1 = function() {
-		var code = 'MXV()';
-		return [code, Blockly.Arduino.ORDER_ATOMIC];
-	};
-	Blockly.Arduino.JT_Magnetic2 = function() {
-		var code = 'MYV()';
-		return [code, Blockly.Arduino.ORDER_ATOMIC];
-	};
-	Blockly.Arduino.JT_Magnetic3 = function() {
-		var code = 'MZV()';
+	Blockly.Arduino.JT_Magnetic = function() {
+		var JTWL_MAG = this.getFieldValue('JTWL_MAG');
+		var code = 'M'+JTWL_MAG+'V()';
 		return [code, Blockly.Arduino.ORDER_ATOMIC];
 	};
 	<!--气压-->
@@ -219,7 +193,15 @@ goog.require('Blockly.JavaScript');
 		var dropdown_PhoneNumber = Blockly.Arduino.valueToCode(this, 'PhoneNumber', Blockly.Arduino.ORDER_ATOMIC);
 		var dropdown_DataContent = Blockly.Arduino.valueToCode(this, 'DataContent', Blockly.Arduino.ORDER_ATOMIC);
 		Blockly.Arduino.setups_['setup_DataTransNum3'] = 'Serial3.begin(115200);\n';
-		var code = 'SendMsg('+dropdown_DataCentre+','+dropdown_PhoneNumber+','+dropdown_DataContent+');\n'
+		var code = 'SendMsgChar('+dropdown_DataCentre+','+dropdown_PhoneNumber+','+dropdown_DataContent+');\n'
+		return code;
+	};
+	Blockly.Arduino.JT_DataTrans4 = function() {
+		var dropdown_DataCentre = Blockly.Arduino.valueToCode(this, 'DataCentre', Blockly.Arduino.ORDER_ATOMIC);
+		var dropdown_PhoneNumber = Blockly.Arduino.valueToCode(this, 'PhoneNumber', Blockly.Arduino.ORDER_ATOMIC);
+		var dropdown_DataContent = Blockly.Arduino.valueToCode(this, 'DataContent', Blockly.Arduino.ORDER_ATOMIC);
+		Blockly.Arduino.setups_['setup_DataTransNum3'] = 'Serial3.begin(115200);\n';
+		var code = 'SendMsgNum('+dropdown_DataCentre+','+dropdown_PhoneNumber+','+dropdown_DataContent+');\n'
 		return code;
 	};
 

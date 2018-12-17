@@ -10,39 +10,22 @@
 <script type="text/javascript" src="../../generators/arduino/company/JTWL.js"></script>
 <!--引用所有写好的模块，这里引入了"延时"模块-->
 <category id="JTWL" name="JTWL" colour="#16b886">
-	
 	<block type="JT_InitAll">
 	</block>
 	
 	<category id="JTWL" name="卫星姿控板" colour="#DB8CCD">
+		<block type="JT_ReAcc">
+		</block>
 		<block type="JT_Acc">
 		</block>
-		<block type="JT_Acc1">
-		</block>
-		<block type="JT_Acc2">
-		</block>
-		<block type="JT_Acc3">
+		
+		<block type="JT_AccDirection">
 		</block>
 		
-		<block type="JT_AccDirection1">
-		</block>
-		<block type="JT_AccDirection2">
-		</block>
-		<block type="JT_AccDirection3">
+		<block type="JT_Angular">
 		</block>
 		
-		<block type="JT_Angular1">
-		</block>
-		<block type="JT_Angular2">
-		</block>
-		<block type="JT_Angular3">
-		</block>
-		
-		<block type="JT_Magnetic1">
-		</block>
-		<block type="JT_Magnetic2">
-		</block>
-		<block type="JT_Magnetic3">
+		<block type="JT_Magnetic">
 		</block>
 		
 		<block type="JT_Pressure">
@@ -105,12 +88,29 @@
 		  </value>
 		  <value name="PhoneNumber">   
 			  <shadow type="text">
-				  <field name="TEXT">+86123456</field>
+				  <field name="TEXT">+8613182055281</field>
 			  </shadow>
 		  </value>
 		  <value name="DataContent">   
 			  <shadow type="text">
 				  <field name="TEXT">Hello World</field>
+			  </shadow>
+		  </value>
+		</block>
+		<block type="JT_DataTrans4">
+		  <value name="DataCentre">   
+			  <shadow type="text">
+				  <field name="TEXT">+8613800100500</field>
+			  </shadow>
+		  </value>
+		  <value name="PhoneNumber">   
+			  <shadow type="text">
+				  <field name="TEXT">+8613182055281</field>
+			  </shadow>
+		  </value>
+		  <value name="DataContent">   
+			  <shadow type="math_number">
+				  <field name="NUM">111</field>
 			  </shadow>
 		  </value>
 		</block>

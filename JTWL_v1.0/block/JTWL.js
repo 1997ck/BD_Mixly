@@ -128,11 +128,11 @@ var JTWLColor = '#00ABCD';
     }
   };
   <!--刷新姿态数据-->
-  Blockly.Blocks.JT_Acc = {
+  Blockly.Blocks.JT_ReAcc = {
     init: function() {
       this.setColour('#FF0000');
       this.appendDummyInput("")
-            .appendField(Blockly.JT_ACC)
+            .appendField(Blockly.JT_REACC)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
       this.setPreviousStatement(true, null);
@@ -142,11 +142,15 @@ var JTWLColor = '#00ABCD';
     }
   };  
   <!--加速度-->
-  Blockly.Blocks.JT_Acc1 = {
+  Blockly.Blocks.JT_Acc = {
     init: function() {
+	  var JTWL_ACC = [['X轴', 'X'],['Y轴', 'Y'],['Z轴', 'Z']];
       this.setColour(JTWLColorAcc);
+	  this.appendDummyInput()
+          .appendField(" ")
+          .appendField(new Blockly.FieldDropdown(JTWL_ACC), 'JTWL_ACC');
       this.appendDummyInput("")
-            .appendField(Blockly.JT_ACC1)
+            .appendField(Blockly.JT_ACC)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
       this.setInputsInline(true);
@@ -154,36 +158,17 @@ var JTWLColor = '#00ABCD';
       this.setTooltip('');
     }
   };  
-  Blockly.Blocks.JT_Acc2 = {
-    init: function() {
-      this.setColour(JTWLColorAcc);
-      this.appendDummyInput("")
-            .appendField(Blockly.JT_ACC2)
-            .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
-			
-      this.setInputsInline(true);
-      this.setOutput(true, Number);
-      this.setTooltip('');
-    }
-  }; 
-  Blockly.Blocks.JT_Acc3 = {
-    init: function() {
-      this.setColour(JTWLColorAcc);
-      this.appendDummyInput("")
-            .appendField(Blockly.JT_ACC3)
-            .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
-			
-      this.setInputsInline(true);
-      this.setOutput(true, Number);
-      this.setTooltip('');
-    }
-  };  
+
   <!--加速度方向-->
-  Blockly.Blocks.JT_AccDirection1 = {
+  Blockly.Blocks.JT_AccDirection = {
     init: function() {
+	  var JTWL_ACD = [['X轴', 'X'],['Y轴', 'Y'],['Z轴', 'Z']];
       this.setColour(JTWLColorAcc);
+	  this.appendDummyInput()
+          .appendField(" ")
+          .appendField(new Blockly.FieldDropdown(JTWL_ACD), 'JTWL_ACD');
       this.appendDummyInput("")
-            .appendField(Blockly.JT_ACD1)
+            .appendField(Blockly.JT_ACDI)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
       this.setInputsInline(true);
@@ -191,36 +176,16 @@ var JTWLColor = '#00ABCD';
       this.setTooltip('');
     }
   };  
-  Blockly.Blocks.JT_AccDirection2 = {
-    init: function() {
-      this.setColour(JTWLColorAcc);
-      this.appendDummyInput("")
-            .appendField(Blockly.JT_ACD2)
-            .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
-			
-      this.setInputsInline(true);
-      this.setOutput(true, Number);
-      this.setTooltip('');
-    }
-  }; 
-  Blockly.Blocks.JT_AccDirection3 = {
-    init: function() {
-      this.setColour(JTWLColorAcc);
-      this.appendDummyInput("")
-            .appendField(Blockly.JT_ACD3)
-            .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
-			
-      this.setInputsInline(true);
-      this.setOutput(true, Number);
-      this.setTooltip('');
-    }
-  };   
   <!--角速度-->
-  Blockly.Blocks.JT_Angular1 = {
+  Blockly.Blocks.JT_Angular = {
     init: function() {
+	  var JTWL_ANG = [['X轴', 'X'],['Y轴', 'Y'],['Z轴', 'Z']];
       this.setColour(JTWLColorAcc);
+	  this.appendDummyInput()
+          .appendField(" ")
+          .appendField(new Blockly.FieldDropdown(JTWL_ANG), 'JTWL_ANG');
       this.appendDummyInput("")
-            .appendField(Blockly.JT_ANG1)
+            .appendField(Blockly.JT_ANG)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
       this.setInputsInline(true);
@@ -228,60 +193,16 @@ var JTWLColor = '#00ABCD';
       this.setTooltip('');
     }
   };  
-  Blockly.Blocks.JT_Angular2 = {
-    init: function() {
-      this.setColour(JTWLColorAcc);
-      this.appendDummyInput("")
-            .appendField(Blockly.JT_ANG2)
-            .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
-			
-      this.setInputsInline(true);
-      this.setOutput(true, Number);
-      this.setTooltip('');
-    }
-  }; 
-  Blockly.Blocks.JT_Angular3 = {
-    init: function() {
-      this.setColour(JTWLColorAcc);
-      this.appendDummyInput("")
-            .appendField(Blockly.JT_ANG3)
-            .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
-			
-      this.setInputsInline(true);
-      this.setOutput(true, Number);
-      this.setTooltip('');
-    }
-  }; 
   <!--磁场-->
-  Blockly.Blocks.JT_Magnetic1 = {
+  Blockly.Blocks.JT_Magnetic = {
     init: function() {
+	  var JTWL_MAG = [['X', 'X'],['Y', 'Y'],['Z', 'Z']];
       this.setColour(JTWLColorAcc);
+	  this.appendDummyInput()
+          .appendField(" ")
+          .appendField(new Blockly.FieldDropdown(JTWL_MAG), 'JTWL_MAG');	  
       this.appendDummyInput("")
-            .appendField(Blockly.JT_MAG1)
-            .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
-			
-      this.setInputsInline(true);
-      this.setOutput(true, Number);
-      this.setTooltip('');
-    }
-  };  
-  Blockly.Blocks.JT_Magnetic2 = {
-    init: function() {
-      this.setColour(JTWLColorAcc);
-      this.appendDummyInput("")
-            .appendField(Blockly.JT_MAG2)
-            .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
-			
-      this.setInputsInline(true);
-      this.setOutput(true, Number);
-      this.setTooltip('');
-    }
-  };  
-  Blockly.Blocks.JT_Magnetic3 = {
-    init: function() {
-      this.setColour(JTWLColorAcc);
-      this.appendDummyInput("")
-            .appendField(Blockly.JT_MAG3)
+            .appendField(Blockly.JT_MAG)
             .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/zaitaikongzhi.png", 52, 32))
 			
       this.setInputsInline(true);
@@ -627,8 +548,29 @@ var JTWLColor = '#00ABCD';
           .appendField('手机号')
           .setCheck([String,Number]);
 	  this.appendValueInput("DataContent", String)
-          .appendField('短信内容')
+          .appendField('短信字符内容')
           .setCheck([String,Number]);
+      this.setPreviousStatement(true, null);
+      this.setNextStatement(true, null);
+      this.setInputsInline(true);
+      this.setTooltip(Blockly.LANG_INOUT_DIGITAL_WRITE_TOOLTIP);
+    }
+  };    
+  Blockly.Blocks.JT_DataTrans4 = {
+    init: function() {
+      this.setColour(JTWLColorDat);
+      this.appendDummyInput("")
+          .appendField(Blockly.JT_DAT)
+          .appendField(new Blockly.FieldImage("../../media/JTWL/PayLoad/shuchuan.png", 52, 32))
+      this.appendValueInput("DataCentre", String)
+          .appendField('短信中心号')
+          .setCheck([String,Number]);
+	  this.appendValueInput("PhoneNumber", String)
+          .appendField('手机号')
+          .setCheck([String,Number]);
+	  this.appendValueInput("DataContent", Number)
+          .appendField('短信变量内容')
+          .setCheck([Number,Boolean]);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
       this.setInputsInline(true);
