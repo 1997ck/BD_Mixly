@@ -16,12 +16,34 @@ long _SAT,_BDC,_UTD;
 
 
 long dirAcc(long a){
-  if(a > 17000)
+  if(a > 16384*2)//2g
   a =  -(65536 - a);
 
   
-  if(a < -17000)
-   a = -(65536 + a) ;
+  if(a < -16384*2)
+   a = (65536 + a) ;
+
+  return a;
+  }
+  
+long dirGro(long a){
+  if(a > 16384*2)//250
+  a =  -(65536 - a);
+
+  
+  if(a < -16384*2)
+   a = (65536 + a) ;
+
+  return a;
+  }
+  
+long dirMag(long a){
+  if(a > 16384)//14bit
+  a =  -(32763 - a);
+
+  
+  if(a < -16384)
+   a = (32763 + a) ;
 
   return a;
   }
@@ -64,25 +86,31 @@ long dirAcc(long a){
 _AX = ((data[0] << 8)| data[1]);
 _AY = ((data[2] << 8)| data[3]);
 _AZ = ((data[4] << 8)| data[5]);
+
 _AX = dirAcc(_AX);
 _AY = dirAcc(_AY);
-_AZ = dirAcc(_AZ);
-
-
-
-
+_AZ = dirAcc(_AZ); 
 
 
 _GX = ((data[6] << 8)| data[7]);
 _GY = ((data[8] << 8)| data[9]);
 _GZ = ((data[10] << 8)| data[11]);
 
+_GX = dirGro(_GX);
+_GY = dirGro(_GY);
+_GZ = dirGro(_GZ); 
+
+
 _MX = ((data[12] << 8)| data[13]);
 _MY = ((data[14] << 8)| data[15]);
 _MZ = ((data[16] << 8)| data[17]);
 
+_MX = dirMag(_MX);
+_MY = dirMag(_MY);
+_MZ = dirMag(_MZ); 
+
 _PRE = ((data[18] << 8)| data[19]);
-_PRE += (65536 - 16384 - 4096);
+//_PRE += (65536 - 16384 - 4096);
 
 
 }

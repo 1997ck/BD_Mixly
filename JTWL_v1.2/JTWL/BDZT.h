@@ -16,7 +16,7 @@
  long MZV();
  
  
- long PRE();
+ long PREV();
 
  
  int gateX();

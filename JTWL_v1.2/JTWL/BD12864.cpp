@@ -18,22 +18,27 @@ end();
   }
 
 void showNum(int z,int x,int y,double kkk){
-long buff = kkk*1000;
-static char numChar[9];
+ 
+char s[10];
+String buff = "";//位数变少时清除最后一位残影
 
-if(buff < 0)
-  numChar[0] ='-';
-else
-  numChar[0] =' '; 
-numChar[8] = (char)(buff % 10 + 48);
-numChar[7] = (char)(buff / 10 % 10 + 48);
-numChar[6] = (char)(buff / 100 % 10 + 48);
-numChar[5] = '.';
-numChar[4] = (char)(buff / 1000 % 10 + 48);
-numChar[3] = (char)(buff / 10000 % 10 + 48);
-numChar[2] = (char)(buff / 100000 % 10 + 48);
-numChar[1] = (char)(buff / 1000000 % 10 + 48);
-showStr(z,x,y,numChar);  
+buff = (String) kkk + " ";
+
+for(int i = 0;i < 10;i ++){
+	if(buff[i] == '.'){
+		if((buff[i + 1] == '0') && (buff[i + 2] == '0')){
+			buff[i] = ' ';
+			buff[i+1] = ' ';
+			buff[i+2] = ' ';
+		}
+	}
+    s[i] = buff[i];
+}
+
+
+    
+//显示在液晶上
+  showStr(z,x,y,s);  
 }
 
 void showStr(int z,int x,int y,char *str){

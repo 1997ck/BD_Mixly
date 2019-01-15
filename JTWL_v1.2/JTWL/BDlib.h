@@ -30,5 +30,4 @@ void initAll();
 #include"BDIR.h"
 
 #include"BDSC.h"
-
 #endif
